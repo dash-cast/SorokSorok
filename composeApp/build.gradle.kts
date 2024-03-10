@@ -56,6 +56,7 @@ kotlin {
         }
         commonMain.dependencies {
             implementation(compose.runtime)
+//            implementation("io.reactivex:rxkotlin:3.0.1")
             implementation(compose.foundation)
             implementation(compose.material)
             implementation(compose.ui)
@@ -102,6 +103,9 @@ android {
     dependencies {
         debugImplementation(libs.compose.ui.tooling)
     }
+}
+dependencies {
+    implementation(libs.rxkotlin)
 }
 
 compose.desktop {
